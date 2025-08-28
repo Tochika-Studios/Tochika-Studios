@@ -10,6 +10,10 @@
     font-display: swap; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -17,16 +21,23 @@ body::-webkit-scrollbar {
 body {
     color: white;
     background-color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    /* padding-top: 1200px; */
 }
 
 .navbar {
+    position: fixed; /* Fixa a navbar na tela */
+    top: 10;          /* Mantém no topo */
+    left: 0;         /* Começa da borda esquerda */
+    width: 100%;     /* Ocupa toda a largura da tela */
     text-align: center;
     justify-content: center;
     display: flex;
     font-size: 112%;
     align-items: center;
+    background-color: rgba(0,0,0,0.8); /* Opcional: adiciona um fundo semi-transparente */
+    z-index: 1000; /* Para ficar acima de outros elementos */
 }
-
 .navbar-link {
     padding: 8px 35px 8px 35px;
     font-size: 125%;
@@ -141,6 +152,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .dropdown-content a:hover {
