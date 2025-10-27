@@ -1,0 +1,27 @@
+/* Navbar */
+
+#navbar {
+    display: flex;
+
+    align-items: last baseline;
+    justify-content: center;
+    gap: 5%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Navbar Itens */
+
+.navbar-item {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-item p {
+    font-size: x-large;
+}
+
+.navbar-item h1 {
+    font-size: xx-large;
+}
+
