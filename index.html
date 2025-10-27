@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Tochika Studios</title>
 
+    <!-- Links -->
     <link rel="stylesheet" href="src/style/navbar.css">
     <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
-    <!-- Nav Bar -->
-    <nav id="navbar">
-        
+        <!-- Nav Bar -->
+        <nav id="navbar">
+                <a class="mobile-navbar-item" href="#"> <h1> Tochika Studios </h1> </a>
+
+                <!-- Projects -->
+                <a class="navbar-item" href="#"> <p> Projects </p> </a>
+
+                <!-- Donation -->
+                <a class="navbar-item" href="#"> <p> Donation </p> </a>
+                
+                <!-- Title -->
+                <a class="navbar-item" href="#"> <h1> Tochika Studios </h1> </a>
+
+                <!-- About Us -->
+                <a class="navbar-item" href="#"> <p> About Us </p> </a>
+
+                <!-- Contact -->
+                <a class="navbar-item" href="#"> <p> Contact </p> </a>
+
+                <!-- Mobile Button -->
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+        </nav>
+
+        <div id="mobile_menu">
             <!-- Projects -->
             <a class="navbar-item" href="#"> <p> Projects </p> </a>
 
             <!-- Donation -->
             <a class="navbar-item" href="#"> <p> Donation </p> </a>
-            
-            <!-- Title -->
-            <a class="navbar-item" href="#"> <h1> Tochika Studios </h1> </a>
-            
+
             <!-- About Us -->
             <a class="navbar-item" href="#"> <p> About Us </p> </a>
 
             <!-- Contact -->
             <a class="navbar-item" href="#"> <p> Contact </p> </a>
-
-    </nav>
-
+        </div>
     </header>
+
+    <script src="src/scripts/script.js"></script>
 </body>
 </html>
