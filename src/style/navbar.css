@@ -18,9 +18,11 @@ header {
 /* Navbar Itens */
 
 .navbar-item {
-    position: relative;
-    text-decoration: none;
-    color: white;
+  position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255); 
+  padding-bottom: 5px; 
+  transition: color 0.3s ease; 
 }
 
 .navbar-item p {
@@ -31,28 +33,31 @@ header {
     font-size: x-large;
 }
 
-.navbar-item.active {
-    color: whitesmoke;
-    border-bottom: 2px solid white;
-    border-radius: 2px;
+.navbar-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%; 
+  height: 2.75px;
+  background-color: white; 
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
 }
 
-.navbar-item::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0%;
-  height: 3px;
-  background-color: white;
-  transition: width 0.5s ease, left 0.5s ease;
-  border-radius: 1px;
+.navbar-item.active::after {
+  width: 100%; 
 }
 
 .navbar-item:hover::after {
-  width: 100%;
-  left: 0;
+  width: 100%; 
 }
+
+.navbar-item.active,
+.navbar-item:hover {
+  color: whitesmoke; 
+}
+
 
 /* Mobile Navbar */
 
@@ -95,6 +100,7 @@ header {
         background-color: rgba(0, 0, 0, 0.7);
         padding: 12px;
         gap: 50px;
+        margin-top: 6%;
     }
 
     .mobile-navbar-item {
