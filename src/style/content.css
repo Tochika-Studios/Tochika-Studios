@@ -1,59 +1,119 @@
-/* Main Content */
+/* Content Style */
 
-#content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+#content  {
+  padding-left:  12rem;
+  padding-right: 12rem;
+  
 }
 
 .content-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  gap: 12%;
+  margin-bottom: 6%;
+}
+
+.content-wrapper-text {
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 
-  gap: 20%;
+  gap: 12%;
+  margin-bottom: 6%;
+}
+
+/* Sections */
+
+#home {
+  margin-top: 12rem;
+  height: 50vh;
+}
+
+#aboutus {
+  margin-top: 19rem;
+  height: 140vh;
+}
+
+#aboutus p {
+  font-size: 120%;
+}
+#aboutus h2 {
+  font-size: 150%;
+}
+
+/* Things */
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 6%;
 }
 
 .text {
-    color: white;
-  font-size: 1.25rem;
-  flex: 1;
-  text-align: left;
+  font-size: 1.2rem;
+  color: white;
 }
 
-/* Image */
-
-.img-wrapper {
-  perspective: 1000px;
-  border-radius: 15px;
-  /* overflow: hidden; */
-  width: 400px;
-  height: 300px;
-
-  flex: 1;
-  display: flex;
-  justify-content: center;
+.text i {
+  color: rgb(184, 184, 184);
 }
 
-.parallax-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  transition: transform 0.1s ease;
-  transform-style: preserve-3d;
-  display: block;
+.img {
+  width: 25%;
 }
 
-/* Responsivity */
+/* Button */
+
+.btn {
+  margin-top: 6%;
+
+  font-size: 100%;
+  color: white;
+
+  background-color: black;
+  border: 0.3rem solid white;
+  border-radius: 100px;
+  padding: 12px 24px;
+
+  transition: all 0.3s ease, box-shadow 0.4s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.08);
+  box-shadow: 0 0 20px white;
+}
+
+/* Animação ao clicar */
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px white;
+}
+
 @media screen and (max-width: 1000px) {
-    .content-wrapper {
-    display: block;
+  #content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column; /* <-- empilha os elementos */
     align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 2rem; /* espaço vertical entre texto e imagem */
+  }
 
-    gap: 0%;
-    }
+  .text {
+    text-align: center;
+  }
 
+  .img {
+    display: none;
+  }
 }
