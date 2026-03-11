@@ -5,7 +5,14 @@
   <url>
     <loc>https://tochikastudios.com/</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- About Us -->
+  <url>
+    <loc>https://tochikastudios.com/aboutus</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 

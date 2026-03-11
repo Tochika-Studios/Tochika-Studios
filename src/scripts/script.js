@@ -7,6 +7,6 @@ $(document).ready(function() {
     });
 });
 
-document.querySelector('.btn').addEventListener('click', () => {
-  document.querySelector('#aboutus').scrollIntoView({ behavior: 'smooth' });
-});
+function btn_AboutUs() {
+  window.location.href = 'aboutus.html';
+}
