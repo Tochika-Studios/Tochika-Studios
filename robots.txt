@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tochikastudios.com/sitemap.xml
