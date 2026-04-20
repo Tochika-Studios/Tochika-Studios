@@ -1,0 +1,27 @@
+/* NAVBAR -<>- STYLE */
+* {
+    margin: 0;
+    height: auto;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#navbar {
+    background-color: black;
+    color: white;
+}
+
+.navbar-title {
+
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 2.4rem;
+}
+
