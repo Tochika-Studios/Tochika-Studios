@@ -3,7 +3,6 @@
 #content  {
   padding-left:  12rem;
   padding-right: 12rem;
-  
 }
 
 .content-wrapper {
@@ -27,13 +26,14 @@
 /* Sections */
 
 #home {
-  margin-top: 10rem;
+  margin-top: 12%;
   height: 50vh;
 }
 
 #aboutus {
-  margin-top: 4rem;
-  height: 120vh;
+  margin-top: 5rem;
+  height: 130vh;
+  margin-bottom: 4rem;
 }
 
 #aboutus p {
