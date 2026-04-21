@@ -8,5 +8,5 @@ $(document).ready(function() {
 });
 
 function btn_AboutUs() {
-  window.location.href = 'aboutus.html';
+  window.location.href = '/aboutus/index.html';
 }
